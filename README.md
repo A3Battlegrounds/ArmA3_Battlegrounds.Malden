@@ -1,7 +1,7 @@
 # ArmA3_Battlegrounds.Malden
-A3Battlegrounds is a game mode based on the Battle Royale mode with the principle that only one player remains alive. - http://www.armabws.com/index.php
+A3Battlegrounds is a game mode based on the Battle Royale mode with the principle that only one player remains alive.
 
-For questions and support, please visit our forums.
+For questions and support, please visit our <a href="http://www.armabws.com/index.php">forums</a>.
 
 #### Team A3BG developers
 
