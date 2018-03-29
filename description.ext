@@ -1,0 +1,176 @@
+author = "[BwS] R3V3NG3";
+onLoadName = "A3Battlegrounds Malden";
+loadScreen = "media\images\survival.jpg";
+overviewPicture = "media\images\survival.jpg";
+
+class Header 
+{
+	gameType = LastMan;
+	minPlayers = 1;
+	maxPlayers = 30;
+};
+
+disabledAI = 1;
+
+wreckLimit = 1;
+wreckRemovalMinTime = 120;
+wreckRemovalMaxTime = 180;
+corpseLimit = 1;	
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 120;
+minPlayerDistance = 150;
+
+briefing = 0;
+debriefing = 0;
+respawnDialog = 0;
+
+#include "scripts\vehicles\crew\common.hpp"
+
+//bAdmin dialog includes
+#include "badmin\client\gui_base.hpp"
+#include "badmin\client\systems\common.hpp"
+#include "badmin\client\systems\adminPanel\dialog\adminMenu.hpp"
+#include "badmin\client\systems\adminPanel\dialog\modMenu.hpp"
+#include "badmin\client\systems\adminPanel\dialog\serverAdminMenu.hpp"
+#include "badmin\client\systems\adminPanel\dialog\debugMenu.hpp"
+#include "badmin\client\systems\adminPanel\dialog\shopMenu.hpp"
+#include "badmin\client\systems\adminPanel\dialog\playerMenu.hpp"
+
+showHUD = 0;
+showGPS = 1;
+
+/*showHUD[] =
+{
+    false,   // Scripted HUD (same as showHUD command)
+    false,   // Vehicle + soldier info
+    false,   // Vehicle radar
+    false,   // Vehicle compass
+    false,   // Tank direction indicator
+    false,  // Commanding menu
+    false,  // Group Bar
+    false,   // HUD Weapon Cursors
+    false   // Vehicle Panel (Required for GPS)
+};*/
+
+#include "minimap\basedefines.hpp"
+
+class RscTitles
+{
+	#include "addons\statusBar\statusBar.hpp"
+	#include "scripts\vehicles\crew\namesleft.hpp"
+	#include "minimap\minimap.hpp"
+	#include "media\images\endGame.hpp"
+};
+
+class CfgFunctions 
+{
+	#include "functions\cfgfunctions.hpp"
+};
+
+class CfgSounds
+{
+	class matchwin
+	{
+		name = "matchwin";
+		sound[] = {"media\match_finish.ogg", 0.20, 1, 100};
+		titles[] = {1, ""};
+	};
+	
+	class matchlose
+	{
+		name = "matchlose";
+		sound[] = {"media\match_finish.ogg", 0.20, 1, 100};
+		titles[] = {1, ""};
+	};
+	
+	class notification
+	{
+		name = "notification";
+		sound[] = {\media\notifi.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_1
+	{
+		name = "fluier_1"; // Name for mission editor
+		sound[] = {\sound\fluier_1.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_2
+	{
+		name = "fluier_2"; // Name for mission editor
+		sound[] = {\sound\fluier_2.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};	
+	
+	class fluier_3
+	{
+		name = "fluier_3"; // Name for mission editor
+		sound[] = {\sound\fluier_3.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};	
+	
+	class fluier_4
+	{
+		name = "fluier_4"; // Name for mission editor
+		sound[] = {\sound\fluier_4.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_5
+	{
+		name = "fluier_5"; // Name for mission editor
+		sound[] = {\sound\fluier_5.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_6
+	{
+		name = "fluier_6"; // Name for mission editor
+		sound[] = {\sound\fluier_6.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_7
+	{
+		name = "fluier_7"; // Name for mission editor
+		sound[] = {\sound\fluier_7.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_8
+	{
+		name = "fluier_8"; // Name for mission editor
+		sound[] = {\sound\fluier_8.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_9
+	{
+		name = "fluier_9"; // Name for mission editor
+		sound[] = {\sound\fluier_9.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_91
+	{
+		name = "fluier_91"; // Name for mission editor
+		sound[] = {\sound\fluier_91.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_92
+	{
+		name = "fluier_92"; // Name for mission editor
+		sound[] = {\sound\fluier_92.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+	
+	class fluier_93
+	{
+		name = "fluier_93"; // Name for mission editor
+		sound[] = {\sound\fluier_93.ogg, db+5, 1.0};
+		titles[] = {0, ""};
+	};
+};
